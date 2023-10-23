@@ -59,7 +59,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <!-- } 게시판 페이지 정보 및 버튼 끝 -->
 
     <?php if ($is_checkbox) { ?>
-    <div id="gall_allchk" class="all_chk chk_box">
+    <div id="gall_allchk" class="all_chk">
         <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
         <label for="chkall">
             <span></span>
@@ -73,7 +73,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
            
          ?>
 
-        <li>
+        <li class="chk_box">
             <?php if ($is_checkbox) { ?>
             <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>" class="selec_chk">
             <label for="chk_wr_id_<?php echo $i ?>">
